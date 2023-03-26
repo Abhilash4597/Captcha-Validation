@@ -26,7 +26,7 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3);
-  max-width: 1440px;
+  width: 30%;
   box-shadow: 5px 5px 10px #545454;
   border-radius: 10px;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .title {
-  padding: 2rem 0 2rem 1rem;
+  padding: 2rem 0 0 1rem;
 }
 
 .registration_form {
@@ -51,25 +51,47 @@ body {
   padding: 0rem 3rem;
 }
 
-.form-label {
-  font-size: 1.1rem;
-  font-weight: 500;
+.inputs {
+  width: 100%;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  outline: none;
 }
 
 /* # -----------------------------------------Captcha and button */
 
+.captcha {
+  display: flex;
+}
+
+.form-label {
+  height: 45px;
+  padding: 10px;
+  line-height: 20px;
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  color: #000000;
+  font-size: 1.5rem;
+  width: 15rem;
+  border: none;
+  outline: none;
+  margin-top: 2rem;
+}
+
 #captchaValue {
-  height: 50px;
+  height: 45px;
   padding: 10px;
   line-height: 20px;
   background-color: #d6d1d1b9;
-  border-radius: 10px;
-  color: #000;
+  border-radius: 10px 0 0 10px;
+  color: #000000;
   font-weight: 700;
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 10rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 #submitBtn{
@@ -80,6 +102,7 @@ body {
   background-color: #000000;
   color: #fff;
   border: 0;
+  margin: 2rem 0;
 }
 
 /* #-------------------------------------------------- Media Query */

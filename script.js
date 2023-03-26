@@ -70,3 +70,4 @@ let val6 = allValue[Math.floor(Math.random() * allValue.length)];
 let value = val1 + val2 + val3 + val4 + val5 + val6; 
 
 captchaValue.innerHTML = value;
+

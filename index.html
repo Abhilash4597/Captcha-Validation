@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Form validation using Captcha">
-  <!-- # BootStrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  
   <!-- # Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -21,49 +19,25 @@
     <div class="registration_container">
       <div class="title_container">
       <h1 class="title">Create an Account</h1>
-      <!-- <i class="fa-solid fa-sun" id="icon"></i> -->
       <i class="fa-solid fa-moon" id="icon"></i>
       </div>
       <form action="" class="registration_form">
-        <div class="row">
-          <div class="col-sm-6 mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" name="firstName">
+          <div class="label-input">
+            <input type="text" class="inputs" id="firstName" name="firstName" placeholder="Name" required>
           </div>
-          <div class="col-sm-6 mb-3">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" name="lastName">
+          <div class="">
+            <input type="email" class="inputs" id="email" name="email" placeholder="Email" required>
           </div>
-          <div class="col-sm-10 mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email">
+          <div class="">
+            <input type="password" class="inputs" id="password" name="password" placeholder="Password" required>
           </div>
-          <div class="col-sm-6 mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" name="password">
+          
+          <div class="captcha">
+            <div id="captchaValue"></div>
+            <input type="text" class="form-label" name="inputCaptcha" placeholder="Captcha" id="inputCaptcha">
           </div>
-          <div class="col-sm-6 mb-3">
-            <label for="confirmPassword" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
-          </div>
-          <div class="col-sm-12 mb-3">
-            <label for="gender" class="form-label w-100">Gender</label>
-            <div class="form-check form-check-inline">
-              <input type="radio" name="gender" id="male" class="form-check-input">
-              <label for="male" class="form-check-label">Male</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input type="radio" name="gender" id="female" class="form-check-input">
-              <label for="female" class="form-check-label">Female</label>
-            </div>
-          </div>
-          <div class="mb-4 col-sm-6 captcha">
-            <div id="captchaValue" class="mb-2"></div>
-            <label for="captcha" class="form-label">Captcha</label>
-            <input type="text" class="form-control" name="inputCaptcha" id="inputCaptcha">
-          </div>
-        </div>
-        <button type="button" id="submitBtn" class="mb-3">Submit</button>
+        
+        <button type="button" id="submitBtn" class="">Submit</button>
       </form>
     </div>
   </div>
@@ -71,9 +45,5 @@
 
 <!-- # Javascipt -->
 <script src="script.js"></script>
-<!-- # Bootstrap Javacript -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
-  integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+
 </html>

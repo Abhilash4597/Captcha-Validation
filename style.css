@@ -3,3 +3,28 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-image: url('http://papers.co/wallpaper/papers.co-so13-pink-peach-soft-pastel-blur-gradation-25-wallpaper.jpg');
+  /* background-image: url('http://papers.co/wallpaper/papers.co-sh28-dark-pink-gremany-2016-gradation-blur-23-wallpaper.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.registration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50%;
+  box-shadow: 5px 5px 10px #545454;
+  border-radius: 10px;
+}
+
+.registration_container {
+  display: flex;
+  min-height: 600px;
+}

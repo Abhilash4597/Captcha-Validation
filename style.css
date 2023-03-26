@@ -5,12 +5,19 @@
 }
 
 body {
-  background-image: url('http://papers.co/wallpaper/papers.co-so13-pink-peach-soft-pastel-blur-gradation-25-wallpaper.jpg');
-  /* background-image: url('http://papers.co/wallpaper/papers.co-sh28-dark-pink-gremany-2016-gradation-blur-23-wallpaper.jpg'); */
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #ffc0cb;
+  color: #000000;
   height: 100vh;
 }
+
+/* #---------------------------------For dark theme */
+
+.dark_theme {
+  background-color: #000000b3;
+  color: #ffffff;
+}
+
+/* #---------------------------------For dark theme */
 
 .registration {
   position: absolute;
@@ -19,31 +26,79 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3);
-  width: 80%;
+  max-width: 1440px;
   box-shadow: 5px 5px 10px #545454;
   border-radius: 10px;
 }
 
-.title {
+.title_container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  /* border: 2px solid green; */
-  padding: 2rem 0 1rem;
+  justify-content: space-between;
 }
 
-.registration_container {
-  /* display: flex; */
-  min-height: 600px;
+.title_container i {
+  font-size: 1.5rem;
+  padding: 2.5rem 2rem 0 0;
+  cursor: pointer;
+}
+
+.title {
+  padding: 2rem 0 2rem 1rem;
 }
 
 .registration_form {
   width: 100%;
-  /* border: 2px solid blue; */
   padding: 0rem 3rem;
 }
 
 .form-label {
   font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* # -----------------------------------------Captcha and button */
+
+#captchaValue {
+  height: 60px;
+  padding: 10px;
+  line-height: 20px;
+  background-color: #d6d1d1b9;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+#submitBtn{
+  padding: .3rem .8rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #000000;
+  color: #fff;
+  border: 0;
+}
+
+/* #-------------------------------------------------- Media Query */
+
+@media (max-width: 450px) {
+  .registration_form {
+    padding: 0rem 1rem;
+  }
+
+  .title,
+  .title_container i {
+    font-size: 1.1rem;
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .form-label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 700px) {
+  .registration_form {
+    padding: 1rem;
+  }
 }

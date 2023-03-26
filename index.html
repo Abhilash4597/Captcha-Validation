@@ -19,32 +19,34 @@
 <body>
   <div class="registration">
     <div class="registration_container">
+      <div class="title_container">
       <h1 class="title">Create an Account</h1>
-      <i class="fa-solid fa-sun"></i>
-      <i class="fa-solid fa-moon"></i>
+      <!-- <i class="fa-solid fa-sun" id="icon"></i> -->
+      <i class="fa-solid fa-moon" id="icon"></i>
+      </div>
       <form action="" class="registration_form">
         <div class="row">
-          <div class="col-sm-6 mb-4">
+          <div class="col-sm-6 mb-3">
             <label for="firstName" class="form-label">First Name</label>
             <input type="text" class="form-control" id="firstName" name="firstName">
           </div>
-          <div class="col-sm-6 mb-4">
+          <div class="col-sm-6 mb-3">
             <label for="lastName" class="form-label">Last Name</label>
             <input type="text" class="form-control" id="lastName" name="lastName">
           </div>
-          <div class="col-sm-12 mb-4">
+          <div class="col-sm-10 mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email">
           </div>
-          <div class="col-sm-6 mb-4">
+          <div class="col-sm-6 mb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password">
           </div>
-          <div class="col-sm-6 mb-4">
+          <div class="col-sm-6 mb-3">
             <label for="confirmPassword" class="form-label">Confirm Password</label>
             <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
           </div>
-          <div class="col-sm-12 mb-4">
+          <div class="col-sm-12 mb-3">
             <label for="gender" class="form-label w-100">Gender</label>
             <div class="form-check form-check-inline">
               <input type="radio" name="gender" id="male" class="form-check-input">
@@ -55,7 +57,13 @@
               <label for="female" class="form-check-label">Female</label>
             </div>
           </div>
+          <div class="mb-4 col-sm-6 captcha">
+            <div id="captchaValue" class="mb-2"></div>
+            <label for="captcha" class="form-label">Captcha</label>
+            <input type="text" class="form-control" name="inputCaptcha" id="inputCaptcha">
+          </div>
         </div>
+        <button type="button" id="submitBtn" class="mb-3">Submit</button>
       </form>
     </div>
   </div>

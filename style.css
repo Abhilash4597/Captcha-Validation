@@ -19,12 +19,31 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3);
-  width: 50%;
+  width: 80%;
   box-shadow: 5px 5px 10px #545454;
   border-radius: 10px;
 }
 
-.registration_container {
+.title {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* border: 2px solid green; */
+  padding: 2rem 0 1rem;
+}
+
+.registration_container {
+  /* display: flex; */
   min-height: 600px;
+}
+
+.registration_form {
+  width: 100%;
+  /* border: 2px solid blue; */
+  padding: 0rem 3rem;
+}
+
+.form-label {
+  font-size: 1.1rem;
 }

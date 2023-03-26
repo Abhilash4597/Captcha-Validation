@@ -1,6 +1,7 @@
 'use strict';
 const icon = document.getElementById('icon');
 const body = document.body;
+const form = document.querySelector('form');
 
 // #-----------------------------For Dark Mode
 
@@ -20,6 +21,8 @@ function darkMode() {
 // #-----------------------------------For Captcha
 
 const captchaValue = document.getElementById('captchaValue');
+const submit = document.getElementById('submitBtn');
+const inputCaptcha = document.getElementById('inputCaptcha');
 
 let allValue = [
   'A',
@@ -48,6 +51,32 @@ let allValue = [
   'X',
   'Y',
   'Z',
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z',
   '1',
   '2',
   '3',
@@ -60,6 +89,7 @@ let allValue = [
   '0',
 ];
 
+
 let val1 = allValue[Math.floor(Math.random() * allValue.length)];
 let val2 = allValue[Math.floor(Math.random() * allValue.length)];
 let val3 = allValue[Math.floor(Math.random() * allValue.length)];
@@ -70,4 +100,21 @@ let val6 = allValue[Math.floor(Math.random() * allValue.length)];
 let value = val1 + val2 + val3 + val4 + val5 + val6; 
 
 captchaValue.innerHTML = value;
+
+let valueStr = '';
+inputCaptcha.addEventListener('change', () => {
+  valueStr = inputCaptcha.value;
+});
+
+form.addEventListener('submit', () => {
+  if (value === valueStr) {
+    alert('Login Done');
+    valueStr = '';
+    inputCaptcha = '';
+  } else {
+    alert('Incorrect Captcha');
+    inputCaptcha = '';
+    valueStr = '';  
+  }
+})
 

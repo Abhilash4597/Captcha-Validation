@@ -38,17 +38,17 @@ body {
 
 .title_container i {
   font-size: 1.5rem;
-  padding: 2.5rem 2rem 0 0;
+  padding: 4.5rem 2rem 0 0;
   cursor: pointer;
 }
 
 .title {
-  padding: 2rem 0 0 1rem;
+  padding: 4rem 0 0 1rem;
 }
 
 .registration_form {
   width: 100%;
-  padding: 0rem 3rem;
+  padding: 0rem 1rem;
 }
 
 .inputs {
@@ -62,47 +62,45 @@ body {
 
 /* # -----------------------------------------Captcha and button */
 
-.captcha {
-  display: flex;
-}
+
 
 .form-label {
-  height: 45px;
-  padding: 10px;
-  line-height: 20px;
-  background-color: #fff;
-  border-radius: 0 10px 10px 0;
-  color: #000000;
-  font-size: 1.5rem;
-  width: 15rem;
-  border: none;
-  outline: none;
   margin-top: 2rem;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  outline: none;
 }
 
 #captchaValue {
-  height: 45px;
-  padding: 10px;
-  line-height: 20px;
+  padding: .3rem;
   background-color: #d6d1d1b9;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   color: #000000;
   font-weight: 700;
-  font-size: 2rem;
-  width: 10rem;
+  font-size: 1.5rem;
+  width: 40%;
+  height: 40px;
   text-align: center;
   margin-top: 2rem;
 }
 
 #submitBtn{
-  padding: .3rem .8rem;
+  padding: .5rem 1rem;
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
   background-color: #000000;
   color: #fff;
-  border: 0;
+  border: none;
+  outline: none;
   margin: 2rem 0;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /* #-------------------------------------------------- Media Query */

@@ -19,6 +19,8 @@ function darkMode() {
 
 // #-----------------------------------For Captcha
 
+const captchaValue = document.getElementById('captchaValue');
+
 let allValue = [
   'A',
   'B',
@@ -58,45 +60,13 @@ let allValue = [
   '0',
 ];
 
-//
+let val1 = allValue[Math.floor(Math.random() * allValue.length)];
+let val2 = allValue[Math.floor(Math.random() * allValue.length)];
+let val3 = allValue[Math.floor(Math.random() * allValue.length)];
+let val4 = allValue[Math.floor(Math.random() * allValue.length)];
+let val5 = allValue[Math.floor(Math.random() * allValue.length)];
+let val6 = allValue[Math.floor(Math.random() * allValue.length)];
 
-// const form = document.getElementById("myForm");
-// const captchaImg = document.getElementById("captchaImg");
-// const captchaText = generateCaptchaText();
+let value = val1 + val2 + val3 + val4 + val5 + val6; 
 
-// // Generate random text for captcha
-// function generateCaptchaText() {
-//   let chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//   let captcha = "";
-//   for (let i = 0; i < 6; i++) {
-//     captcha += chars[Math.floor(Math.random() * chars.length)];
-//   }
-//   return captcha;
-// }
-
-// // Update captcha image with new text
-// function updateCaptcha() {
-//   captchaText = generateCaptchaText();
-//   captchaImg.src = https://dummyimage.com/150x50/000/fff&text=${captchaText};
-// }
-
-// // Check if captcha value is correct
-// function checkCaptcha() {
-//   return document.getElementById("captcha").value === captchaText;
-// }
-
-// // Add event listener to form submission
-// form.addEventListener("submit", function(event) {
-//   event.preventDefault();
-//   if (checkCaptcha()) {
-//     // Captcha is correct, submit form
-//     form.submit();
-//   } else {
-//     // Captcha is incorrect, update captcha and display error message
-//     updateCaptcha();
-//     alert("Incorrect Captcha. Please try again.");
-//   }
-// });
-
-// // Update captcha when image is clicked
-// captchaImg.addEventListener("click", updateCaptcha);
+captchaValue.innerHTML = value;
